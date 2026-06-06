@@ -1,0 +1,1053 @@
+[
+  {
+    "url": "https://ritual-onchain-id.vercel.app/",
+    "name": "Ritual Testnet Card",
+    "owner": "maharshi_17904",
+    "contracts": [
+      {
+        "address": "0x13a23f4054604fb6a3036f78ba7b6650bfdd5b47",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 4,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-stats-check.vercel.app/",
+    "name": "Ritual Address Analyzer",
+    "owner": "0xtanoy",
+    "contracts": [],
+    "candidatesFound": 3,
+    "scrapeError": null
+  },
+  {
+    "url": "https://gritual-striker.vercel.app/",
+    "name": "GM Stike every 24 Hours",
+    "owner": "kency17",
+    "contracts": [
+      {
+        "address": "0xa80e4964285e4f2074e378007353399df2fe1380",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 9,
+    "scrapeError": null
+  },
+  {
+    "url": "https://siggy-arcade.vercel.app/",
+    "name": "Siggys Virtual Arcade",
+    "owner": "0x0saragi",
+    "contracts": [
+      {
+        "address": "0x8343e7218b6cdd7dc1c2e18e09c886feab6f6076",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 4,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-builder-proof.pages.dev/",
+    "name": "Ritual Builder Proof",
+    "owner": "pushkin_ievgen",
+    "contracts": [
+      {
+        "address": "0x4a75c7157b846feab8fdd136c76b21c304e751c3",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 10,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-tamagotchi.vercel.app/",
+    "name": "Ritual Tamagotchi",
+    "owner": "mirage5815",
+    "contracts": [
+      {
+        "address": "0x184a377c78ed577e38b43c3822be4b4ea773fe7c",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-console.netlify.app/",
+    "name": "Ritual Mission Console",
+    "owner": "herbcase",
+    "contracts": [
+      {
+        "address": "0x04dc48af8dc62df4a6a0caac346545cad6fe7598",
+        "verified": true
+      },
+      {
+        "address": "0x532f0df0896f353d8c3dd8cc134e8129da2a3948",
+        "verified": true
+      },
+      {
+        "address": "0x9644e8562ce0fe12b4deec4163c064a8862bf47f",
+        "verified": true
+      },
+      {
+        "address": "0xf9bf1bc8a3e79b9ebed0fa2db70d0513fece32fd",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 14,
+    "scrapeError": null
+  },
+  {
+    "url": "https://jumping-siggy-the-pussy.vercel.app/",
+    "name": "Jumping Siggy",
+    "owner": "randzkie05",
+    "contracts": [
+      {
+        "address": "0x46637aa78c328edcc84ffc161b7b7e2545ee01a9",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 4,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ramavenom.github.io/rekt-or-rich/",
+    "name": "Predection Market",
+    "owner": "ramaxwhale",
+    "contracts": [
+      {
+        "address": "0xc9f7daf728ae7c1d42d075fcae1cfc3084a1d91c",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 2,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-micro-tap.vercel.app/",
+    "name": "Ritual Micro Tap",
+    "owner": "lubudebotton",
+    "contracts": [
+      {
+        "address": "0x210c0a5ca1645fd5c0fd8bcfab01d083c7f3a20c",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 10,
+    "scrapeError": null
+  },
+  {
+    "url": "https://research-vault-beta.vercel.app/",
+    "name": "Ritual Encrypted Research",
+    "owner": "cripson",
+    "contracts": [
+      {
+        "address": "0x532f0df0896f353d8c3dd8cc134e8129da2a3948",
+        "verified": true
+      },
+      {
+        "address": "0x9644e8562ce0fe12b4deec4163c064a8862bf47f",
+        "verified": true
+      },
+      {
+        "address": "0xc069ffca0389f44eca2c626e55491b0ab045aef5",
+        "verified": true
+      },
+      {
+        "address": "0xfefd8898ed19daf2ea5067f3c081a51bde5c75d2",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 13,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-oracle-two.vercel.app/",
+    "name": "Ritual Oracle",
+    "owner": "tutubear",
+    "contracts": [
+      {
+        "address": "0x43c007c37db5684ae0913c680f680f7cb22a7a5b",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualarena1.vercel.app/",
+    "name": "Ritual Arena",
+    "owner": "jonikeciltomuch",
+    "contracts": [
+      {
+        "address": "0x592d75ac5ab1b04ca4109fba9f08a69fdc2d566c",
+        "verified": true
+      },
+      {
+        "address": "0xb96cf73c7d528e95f2aad71fce938b98989275b3",
+        "verified": true
+      },
+      {
+        "address": "0xc06d367e65fcc8d87e4df9be6ff925468f63751b",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 9,
+    "scrapeError": null
+  },
+  {
+    "url": "https://t.me/DiaRoutine_Bot",
+    "name": "diabetes diary TG BOT",
+    "owner": "meison7554",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://www.ritcord.xyz/",
+    "name": "Ritual Discord Tracker NFT MInt",
+    "owner": "marksocrates",
+    "contracts": [
+      {
+        "address": "0x46d18e263e2afa0fbe12059340b3e73e86f12405",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 22,
+    "scrapeError": null
+  },
+  {
+    "url": "https://siggy-ritualizer.vercel.app/",
+    "name": "Siggy Ritualizer",
+    "owner": "dabid3258",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": "fetch HTML: HTTP 402"
+  },
+  {
+    "url": "https://ritual-flip.vercel.app/",
+    "name": "Ritual Coin Flip",
+    "owner": "nheoweb3",
+    "contracts": [
+      {
+        "address": "0x532f0df0896f353d8c3dd8cc134e8129da2a3948",
+        "verified": true
+      },
+      {
+        "address": "0xc87eb197024d93e188ec5ef9bf70a3fd1b13f94b",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 9,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-card-pfp-generator.vercel.app/",
+    "name": "Ritual Identity Generator",
+    "owner": "emir_ethh",
+    "contracts": [],
+    "candidatesFound": 2,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-lst.vercel.app/",
+    "name": "Ritual Staking",
+    "owner": "yourinuu",
+    "contracts": [
+      {
+        "address": "0x7bb1ca1df4aa62a441e37adc5df814e8c61d2001",
+        "verified": true
+      },
+      {
+        "address": "0xbef776d31f0fb4f141e12443eb0956f5fbd75398",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 22,
+    "scrapeError": null
+  },
+  {
+    "url": "https://siggystreaks.vercel.app/en",
+    "name": "Siggy Streaks",
+    "owner": "Thomas",
+    "contracts": [
+      {
+        "address": "0x0bf6fff6dd7f17645433c9686c188ebc1c64c390",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 3,
+    "scrapeError": null
+  },
+  {
+    "url": "https://guess-the-ritualist.vercel.app/",
+    "name": "Guess The Ritualists",
+    "owner": "oluwasegun1334",
+    "contracts": [
+      {
+        "address": "0x331fd65a78ae4b11bc6135a75fe2c2aa8724a1b3",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 3,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-paws.vercel.app/",
+    "name": "Ritual Paws",
+    "owner": "_neitenoz26",
+    "contracts": [
+      {
+        "address": "0x1b3b1bcaee6531db311af76afa757d01bbced9ab",
+        "verified": true
+      },
+      {
+        "address": "0x40b5d9a2315a03ae2540628e21a335d144175a41",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 5,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-rocketpad.vercel.app",
+    "name": "RitualPad",
+    "owner": "noyon_12",
+    "contracts": [],
+    "candidatesFound": 4,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-mystery-box.vercel.app",
+    "name": "3D CASE SEALER",
+    "owner": "sarimbby",
+    "contracts": [
+      {
+        "address": "0x6dc5be61cb268b88a009a75236b0cd299ac77a4c",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://skypredict.app/",
+    "name": "Sky Predict",
+    "owner": "pemburuhadiah_",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": "fetch HTML: HTTP 502"
+  },
+  {
+    "url": "https://ritualplayyy.netlify.app/",
+    "name": "Ritual Play Spin",
+    "owner": "siuuuu7707",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": "fetch HTML: fetch failed"
+  },
+  {
+    "url": "https://siggy-miner-ritual.vercel.app/",
+    "name": "Siggy Miner",
+    "owner": "_._mingyu_._",
+    "contracts": [
+      {
+        "address": "0x9e3fa0270f7cb3c7aed943185e154dba8c402908",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-fate-engine.netlify.app/",
+    "name": "Ritual Fate Engine",
+    "owner": "Murat",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://risa-finance.netlify.app/",
+    "name": "Risa Finance",
+    "owner": "septian227",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": "fetch HTML: fetch failed"
+  },
+  {
+    "url": "https://ritual-learn.vercel.app/",
+    "name": "Ritual Learn",
+    "owner": "dotmantissa",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-flip-card-game.fun/",
+    "name": "Ritual Flip Game",
+    "owner": "Hanna_tran",
+    "contracts": [
+      {
+        "address": "0xbd29386f87d2527416639db095f89051cdcd4879",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 4,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualist-game.vercel.app/",
+    "name": "Ritual Survival",
+    "owner": "kaffee8888",
+    "contracts": [
+      {
+        "address": "0xecb5ede1b52e9e3c0818289defd545e7881327c2",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 23,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-tip-feed-iwkg.vercel.app/",
+    "name": "Ritual Tip Feed",
+    "owner": "prv04_",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://the-cauldron-iota.vercel.app/",
+    "name": "The Cauldron",
+    "owner": "mmorgs",
+    "contracts": [],
+    "candidatesFound": 10,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualapp-revoke.vercel.app/",
+    "name": "Ritual App Revoke",
+    "owner": "nostalgiagila",
+    "contracts": [],
+    "candidatesFound": 20,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-time-capsule.vercel.app/",
+    "name": "Ritual Time Capsule",
+    "owner": "miretu",
+    "contracts": [
+      {
+        "address": "0x75182fd991e0817912b6730ce42bb1a507642669",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 21,
+    "scrapeError": null
+  },
+  {
+    "url": "https://nft-ritual-banner-x.vercel.app/",
+    "name": "Ritual Banner NFT",
+    "owner": "rizannn",
+    "contracts": [
+      {
+        "address": "0x99a795182eda2e538c5b603898d7097ff887cd6a",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 4,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualfortunes-juqy.vercel.app/",
+    "name": "Ritual Fortune",
+    "owner": "Kej",
+    "contracts": [
+      {
+        "address": "0x578949c19ec466965386b7ecaeb5fd341153c154",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://siggyrunv2.vercel.app/",
+    "name": "Siggy Run",
+    "owner": "aliorbz",
+    "contracts": [],
+    "candidatesFound": 3,
+    "scrapeError": null
+  },
+  {
+    "url": "https://stealth-drop-omega.vercel.app/",
+    "name": "Stealth Drop",
+    "owner": "versus777",
+    "contracts": [
+      {
+        "address": "0x532f0df0896f353d8c3dd8cc134e8129da2a3948",
+        "verified": true
+      },
+      {
+        "address": "0x56e776bae2dd60664b69bd5f865f1180ffb7d58b",
+        "verified": true
+      },
+      {
+        "address": "0x62eb52ef9168b1a6af5d607f99fef38472031859",
+        "verified": true
+      },
+      {
+        "address": "0x9644e8562ce0fe12b4deec4163c064a8862bf47f",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 58,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-friend.vercel.app/",
+    "name": "Ritual Friend Zone",
+    "owner": "Willox",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-teacher-hjb3.vercel.app/",
+    "name": "Ritual Teachr Hub",
+    "owner": "kitoccrypto",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-testnet-six.vercel.app/",
+    "name": "Blockie NFT Dapp",
+    "owner": "blockiexyz",
+    "contracts": [],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-agent-feeds.vercel.app/",
+    "name": "Ritual Agent Terminal",
+    "owner": "NXR",
+    "contracts": [
+      {
+        "address": "0xe9f9c5a9b39033aa0b0cfa3fff573200743b2c70",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 10,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-dapp.vercel.app/",
+    "name": "Ritual Deploy Contract",
+    "owner": "babangaip",
+    "contracts": [],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://sigil-ritual.auranode.xyz/",
+    "name": "Ritual Play Ground",
+    "owner": "hidayahhtaufik",
+    "contracts": [
+      {
+        "address": "0x532f0df0896f353d8c3dd8cc134e8129da2a3948",
+        "verified": true
+      },
+      {
+        "address": "0x56e776bae2dd60664b69bd5f865f1180ffb7d58b",
+        "verified": true
+      },
+      {
+        "address": "0x5a16214ff555848411544b005f7ac063742f39f6",
+        "verified": true
+      },
+      {
+        "address": "0x7a85f48b971cebb75491b61abe279728f4c4384f",
+        "verified": true
+      },
+      {
+        "address": "0x9644e8562ce0fe12b4deec4163c064a8862bf47f",
+        "verified": true
+      },
+      {
+        "address": "0xc069ffca0389f44eca2c626e55491b0ab045aef5",
+        "verified": true
+      },
+      {
+        "address": "0xef505e801f1db392b5289690e2ffc20e840a3aca",
+        "verified": true
+      },
+      {
+        "address": "0xf9bf1bc8a3e79b9ebed0fa2db70d0513fece32fd",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 8,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-signature-cards.vercel.app/",
+    "name": "Ritua signature Cards",
+    "owner": "antgeo13",
+    "contracts": [],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://inferstake.vercel.app",
+    "name": "Ritual inferstake",
+    "owner": "tanvirmiqbal",
+    "contracts": [
+      {
+        "address": "0x6e4463b62a2e332b007573dbe7f0bf3b784b4838",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-scratch.vercel.app/",
+    "name": "Ritual Scratch",
+    "owner": "abmdrop",
+    "contracts": [
+      {
+        "address": "0x90e1e14a6d1bc404a08588a817e32186b9578309",
+        "verified": true
+      },
+      {
+        "address": "0xceba4b966578454b0debd3e0c36444716ab6cccd",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 5,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-relic-hunt.vercel.app/",
+    "name": "Ritual Relic hunt",
+    "owner": "flaha",
+    "contracts": [
+      {
+        "address": "0xbf832d56c535fb957b783dc2b13b431b67a18ecd",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 2,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-speed-quiz.vercel.app/",
+    "name": "Ritual Quiz",
+    "owner": "i_xer0",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-carnival.vercel.app/",
+    "name": "Ritual Claw Carnival",
+    "owner": "tanjiiiiiiii",
+    "contracts": [
+      {
+        "address": "0xc3a0d73b2fdcd078d6103b3d472526b0ba01083d",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 14,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-pixel-quest.vercel.app/",
+    "name": "Ritual Restor Puzzle",
+    "owner": "kenavee",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-collection.vercel.app/",
+    "name": "Ritual Collection",
+    "owner": "tripppin666",
+    "contracts": [
+      {
+        "address": "0x2e91db77f52d998860a12467cc74ce3eb8c534b1",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 24,
+    "scrapeError": null
+  },
+  {
+    "url": "https://deadman-switch.netlify.app/",
+    "name": "Ritual's Dead Man Switch",
+    "owner": "Rohit",
+    "contracts": [],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://cranky-dunces-unlocks-ritualmainnet.vercel.app/",
+    "name": "Ritual Dunce",
+    "owner": "Cranky",
+    "contracts": [
+      {
+        "address": "0x5a30f23aaf6006799192764b60ba5aa265031d9c",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 9,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-create-contract.vercel.app",
+    "name": "Ritual Contract Deploy",
+    "owner": "Joyesh",
+    "contracts": [],
+    "candidatesFound": 6,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualtypeedu.netlify.app/",
+    "name": "Ritual Type",
+    "owner": "beacon45",
+    "contracts": [
+      {
+        "address": "0x05d31c08f981f044127f41beee8c8bf757a266e9",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualconnectionidentity.vercel.app/",
+    "name": "Ritual Connection Identity",
+    "owner": "saamzzzbro",
+    "contracts": [
+      {
+        "address": "0x68f5502c038f1379adb139b52f4ead9578d62e5c",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 3,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-atlas.vercel.app/",
+    "name": "Ritual Discovery",
+    "owner": "cryptowood",
+    "contracts": [],
+    "candidatesFound": 24,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-pfp-onchain.vercel.app/",
+    "name": "Ritual PFP OnChain",
+    "owner": "beeeear.",
+    "contracts": [
+      {
+        "address": "0x532f0df0896f353d8c3dd8cc134e8129da2a3948",
+        "verified": true
+      },
+      {
+        "address": "0x65a726e59e4e777ec34e789af06fccffc7df2abe",
+        "verified": true
+      },
+      {
+        "address": "0x7e5e17c6d6ce870f57063736bb360859b3643830",
+        "verified": true
+      },
+      {
+        "address": "0xcfc025dc3b64e5b078a1244bd768519b00a0a3b8",
+        "verified": true
+      },
+      {
+        "address": "0xf9614662f74e1cdf0ac6f200058440c619252082",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 13,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-narrative-pulse.vercel.app/",
+    "name": "Narrative Pulse",
+    "owner": "bullex0",
+    "contracts": [],
+    "candidatesFound": 3,
+    "scrapeError": null
+  },
+  {
+    "url": "https://rittymarket.xyz/",
+    "name": "Prediction Market",
+    "owner": "frisco_fr",
+    "contracts": [
+      {
+        "address": "0x17a0e7a483ec32db2f65091275309189fd28a491",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 3,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-puzzles.vercel.app/",
+    "name": "Ritual Puzzle",
+    "owner": "ms.jaeee",
+    "contracts": [
+      {
+        "address": "0xa1bed5028b1144f7890a94f9b6cb40eedbcd196a",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-clicker.vercel.app/",
+    "name": "Ritual Clicker",
+    "owner": "callmehannnn",
+    "contracts": [
+      {
+        "address": "0x55d5c4b9f92e956a10665f143c561b0f10c881d5",
+        "verified": true
+      },
+      {
+        "address": "0x841d0428871858a4065e73bb866301d1dd559dce",
+        "verified": true
+      },
+      {
+        "address": "0x989bb911bf43679037a277b403291612ba8eecab",
+        "verified": true
+      },
+      {
+        "address": "0x98c49cc264cc8460144500f305231f92a5542128",
+        "verified": true
+      },
+      {
+        "address": "0xf6f3a1f41744e91b2eb0c1b37021e5d3d99beab7",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 5,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-sbt-mint-oahid.vercel.app/",
+    "name": "Ritual SBT",
+    "owner": "oahid",
+    "contracts": [
+      {
+        "address": "0x4925e8083994323e539ed03f8048cd6b90790619",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-guys.vercel.app/",
+    "name": "Ritual Guys",
+    "owner": "herrybrown09",
+    "contracts": [
+      {
+        "address": "0x8232da00022ecda216ecfe0dc6084b698f72d767",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 73,
+    "scrapeError": null
+  },
+  {
+    "url": "https://www.siggy.surf/",
+    "name": "Siggy Surfers",
+    "owner": "tutufly_yy",
+    "contracts": [
+      {
+        "address": "0xddaf3cb038901432fd2b4fce9e614e9cd2c24e56",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 12,
+    "scrapeError": null
+  },
+  {
+    "url": "https://myritualpassport.vercel.app/",
+    "name": "Ritual Passport",
+    "owner": "itsmeagoyyy",
+    "contracts": [
+      {
+        "address": "0x7a00a03cda226f941b54c910fd13f955e2f21cde",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 20,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-network-bice.vercel.app/",
+    "name": "Ritual Build your mark",
+    "owner": "youngest_grandad_marvell",
+    "contracts": [],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-tetris.vercel.app",
+    "name": "Ritual Tetris",
+    "owner": "0xeyesofetresia",
+    "contracts": [
+      {
+        "address": "0x56306dc9a61790ca7aacc97edc50e320db44fcf5",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 1,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualpfp.xyz/",
+    "name": "Ritual PFP generator",
+    "owner": "dayzzzer",
+    "contracts": [
+      {
+        "address": "0x40485157654663959c682942c8137330f1996f4b",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 9,
+    "scrapeError": null
+  },
+  {
+    "url": "https://matheritual.vercel.app/",
+    "name": "Matheritual",
+    "owner": "philip3828",
+    "contracts": [
+      {
+        "address": "0x2645fdce9e7cf803f396782110b0f93a54e3c876",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://the-courtroom.vercel.app/",
+    "name": "The Courtoom",
+    "owner": "snooowflake",
+    "contracts": [],
+    "candidatesFound": 33,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-casino.vercel.app/",
+    "name": "Ritual Casino",
+    "owner": "befree0x",
+    "contracts": [],
+    "candidatesFound": 13,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualwallinferencenet.netlify.app/",
+    "name": "Ritual Wall",
+    "owner": "seesac_",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": "fetch HTML: HTTP 503"
+  },
+  {
+    "url": "https://ritual-wallet-dashboard.vercel.app/",
+    "name": "Ritual Command Center",
+    "owner": "0xdenta",
+    "contracts": [
+      {
+        "address": "0x126ce9f1599f2667a4ff3e0eaaccc4c363343fd1",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 8,
+    "scrapeError": null
+  },
+  {
+    "url": "https://enshrined-psi.vercel.app/",
+    "name": "Enshrined",
+    "owner": "starknight50x",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritualfly.vercel.app/",
+    "name": "RitualFly",
+    "owner": "Dezzy",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-arbiter.vercel.app/",
+    "name": "On-Chain AI Judge",
+    "owner": "lambezii",
+    "contracts": [
+      {
+        "address": "0x532f0df0896f353d8c3dd8cc134e8129da2a3948",
+        "verified": true
+      },
+      {
+        "address": "0x66059df3f266c5feeae61af3fd461e782d03b2bc",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 10,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-divination.vercel.app/",
+    "name": "Ritual Divination",
+    "owner": "tembi4kinn",
+    "contracts": [],
+    "candidatesFound": 7,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritchess.vercel.app/",
+    "name": "Ritual Chess",
+    "owner": "classic7045",
+    "contracts": [
+      {
+        "address": "0x00dfb863c3033f8e23c3397f1c82f967c49178ca",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 12,
+    "scrapeError": null
+  },
+  {
+    "url": "https://onchain-quiz-ritual.vercel.app/",
+    "name": "On-Chain Quiz",
+    "owner": "edward_evm",
+    "contracts": [
+      {
+        "address": "0x3d79271982c87369610f98b6897e1ed31e2dadee",
+        "verified": true
+      }
+    ],
+    "candidatesFound": 10,
+    "scrapeError": null
+  },
+  {
+    "url": "https://ritual-prompt-forge.vercel.app/",
+    "name": "Ritual Prompt Forge",
+    "owner": "basss_eth",
+    "contracts": [],
+    "candidatesFound": 0,
+    "scrapeError": null
+  }
+]
