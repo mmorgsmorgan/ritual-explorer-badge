@@ -1,5 +1,5 @@
-// Server-only Supabase client. Uses the service-role key for writes from the
-// indexer / cron route. Never import this from a client component.
+// Server-only Supabase client. Holds the dApp registry the scanner reads on
+// every badge load. Never import from a client component.
 
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import type { Database } from './supabase-types';

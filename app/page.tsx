@@ -1,6 +1,8 @@
-// Landing page — connect wallet → sign-in → green loading button.
+// Landing page — connect wallet → sign-in → loading button.
 //
-// The whole flow lives in <ConnectScan>; this page just frames it.
+// Gothic theme: ink background, crimson accents, lavender glow on focus,
+// sepia haze bleeds through from globals.css. Single source of color truth
+// is the @theme block in globals.css.
 
 'use client';
 
@@ -29,15 +31,17 @@ export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col px-6 py-16">
       <header>
-        <p className="text-xs uppercase tracking-widest text-zinc-500">
-          Ritual Chain · Step 1 · Sign In
+        <p className="font-display text-[10px] uppercase tracking-[0.5em] text-crimson-glow">
+          · Ritual Chain · Step 1 ·
         </p>
-        <h1 className="mt-2 text-4xl font-semibold tracking-tight">
-          Engagement Badge
+        <h1 className="mt-4 font-display text-5xl font-bold uppercase tracking-[0.08em] text-bone">
+          Engagement
+          <br />
+          <span className="text-crimson">Badge</span>
         </h1>
-        <p className="mt-3 max-w-md text-zinc-600 dark:text-zinc-400">
-          Every dApp your wallet has touched on Ritual Chain. Connect, sign,
-          scan.
+        <p className="mt-5 max-w-md text-sm leading-relaxed text-bone-muted">
+          A reading of every dApp your wallet has touched on Ritual Chain.
+          Connect, sign, scan — the chain bears witness.
         </p>
       </header>
 
@@ -49,7 +53,7 @@ export default function Home() {
         <button
           type="button"
           onClick={() => setShowLookup((v) => !v)}
-          className="text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50"
+          className="font-display text-[11px] uppercase tracking-[0.3em] text-bone-muted transition-colors hover:text-bone"
         >
           {showLookup ? '× close' : 'or look up another address →'}
         </button>
@@ -57,7 +61,7 @@ export default function Home() {
         {showLookup && (
           <form
             onSubmit={submitLookup}
-            className="mt-3 flex flex-col gap-2 sm:flex-row"
+            className="mt-4 flex flex-col gap-2 sm:flex-row"
           >
             <input
               value={input}
@@ -66,27 +70,26 @@ export default function Home() {
                 if (error) setError(null);
               }}
               placeholder="0x…"
-              className="flex-1 rounded-md border border-zinc-300 bg-white px-3 py-2 font-mono text-sm focus:border-zinc-900 focus:outline-none dark:border-zinc-700 dark:bg-zinc-950 dark:focus:border-zinc-50"
+              className="flex-1 rounded-md border border-armor-edge bg-armor px-4 py-3 font-mono text-sm text-bone placeholder:text-bone-muted/60 transition focus:border-crimson focus:outline-none focus:glow-crimson"
             />
             <button
               type="submit"
-              className="rounded-md border border-zinc-300 bg-white px-5 py-2 text-sm font-medium hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-950 dark:hover:bg-zinc-900"
+              className="rounded-md border border-crimson/60 bg-crimson-deep/40 px-6 py-3 font-display text-xs uppercase tracking-[0.25em] text-bone transition hover:border-crimson hover:bg-crimson hover:glow-crimson"
             >
               View
             </button>
           </form>
         )}
-        {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
+        {error && <p className="mt-2 text-sm text-crimson-glow">{error}</p>}
       </section>
 
-      <footer className="mt-auto pt-16 text-xs text-zinc-500">
-        Tracking 84 community dApps across 70 verified contracts on Ritual
-        Chain (id 1979).{' '}
+      <footer className="mt-auto pt-16 text-xs text-bone-muted">
+        Tracking community dApps across verified contracts on Ritual Chain.{' '}
         <Link
           href="https://docs.google.com/spreadsheets/d/1-71yrtMqSRCTAvmshY2K_wDSYproX7GQFybKwkC5IFM/edit"
           target="_blank"
           rel="noreferrer"
-          className="underline hover:text-zinc-900 dark:hover:text-zinc-50"
+          className="text-crimson-glow underline-offset-2 hover:underline"
         >
           Source list
         </Link>

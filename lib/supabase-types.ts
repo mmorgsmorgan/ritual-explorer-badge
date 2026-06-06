@@ -44,44 +44,6 @@ export type Database = {
           },
         ];
       };
-      engagements: {
-        Row: {
-          id: number;
-          user_address: string;
-          contract_address: string;
-          tx_hash: string;
-          block_number: number;
-          block_timestamp: string;
-          value_wei: string;
-          observed_at: string;
-        };
-        Insert: {
-          id?: number;
-          user_address: string;
-          contract_address: string;
-          tx_hash: string;
-          block_number: number;
-          block_timestamp: string;
-          value_wei?: string;
-          observed_at?: string;
-        };
-        Update: Partial<Database['public']['Tables']['engagements']['Insert']>;
-        Relationships: [];
-      };
-      indexer_state: {
-        Row: {
-          name: string;
-          last_block: number;
-          last_checked_at: string;
-        };
-        Insert: {
-          name: string;
-          last_block?: number;
-          last_checked_at?: string;
-        };
-        Update: Partial<Database['public']['Tables']['indexer_state']['Insert']>;
-        Relationships: [];
-      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;

@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/*
+ * Ritual Engagement Badge — gothic palette.
+ *
+ * ink         deep near-black behind everything
+ * armor       primary surface (cards, inputs)
+ * armor-soft  raised surface / hover
+ * armor-edge  hairline border
+ * bone        primary text
+ * bone-muted  secondary text
+ * crimson     blood red accent (Sign In, errors, hero hue)
+ * crimson-deep darker crimson for shadows / pressed states
+ * crimson-glow bright crimson for the jagged-crown halo effect
+ * lavender    sacred glow used in the loading bar + hover halos
+ * lavender-soft for chip backgrounds
+ * sepia       warm parchment haze that bleeds through behind the figure
+ */
+@theme {
+  --color-ink:           #08050a;
+  --color-armor:         #1a1517;
+  --color-armor-soft:    #251f23;
+  --color-armor-edge:    rgba(255, 240, 230, 0.08);
+  --color-bone:          #f5efe6;
+  --color-bone-muted:    #8d847d;
+  --color-crimson:       #c91212;
+  --color-crimson-deep:  #8a0000;
+  --color-crimson-glow:  #ff2a3a;
+  --color-lavender:      #c084fc;
+  --color-lavender-soft: rgba(192, 132, 252, 0.15);
+  --color-sepia:         #3a2a1e;
+
+  --font-display: var(--font-cinzel), "Cinzel", "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans:    var(--font-geist-sans);
+  --font-mono:    var(--font-geist-mono);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: dark;
+  background: var(--color-ink);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ink);
+  color: var(--color-bone);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  /*
+   * Two radial bleeds: a smoky sepia haze near the top-center evoking the
+   * parchment background of the reference image, and a faint crimson bloom
+   * lower-left echoing the blood-red mist behind the figure.
+   */
+  background-image:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(58, 42, 30, 0.55), transparent 70%),
+    radial-gradient(ellipse 70% 50% at 20% 100%, rgba(138, 0, 0, 0.18), transparent 70%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Decorative utility — a soft inner crimson glow on focus / hover. */
+@utility glow-crimson {
+  box-shadow:
+    0 0 0 1px rgba(201, 18, 18, 0.4),
+    0 0 24px -4px rgba(201, 18, 18, 0.55),
+    0 0 60px -20px rgba(255, 42, 58, 0.4);
+}
+
+@utility glow-lavender {
+  box-shadow:
+    0 0 0 1px rgba(192, 132, 252, 0.45),
+    0 0 28px -4px rgba(192, 132, 252, 0.55),
+    0 0 80px -20px rgba(233, 213, 255, 0.5);
+}
+
+/* Subtle parchment grain on hero surfaces — emulates the cream-paper texture. */
+@utility hero-grain {
+  background-image:
+    radial-gradient(circle at 30% 20%, rgba(245, 239, 230, 0.05), transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(192, 132, 252, 0.06), transparent 55%);
 }

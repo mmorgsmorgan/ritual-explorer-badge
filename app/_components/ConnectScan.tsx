@@ -3,15 +3,15 @@
 // Page 1 — landing connect + sign-in flow.
 //
 // Sequence:
-//   1. Idle:   ConnectButton.
-//   2. Sign-in: prompt sign-message ("I'm here").
-//   3. Loading: green "button" with internal progress bar fills 0→100% over
-//      ~10s. Meanwhile, /api/scan/<address> fires speculatively + we prefetch
-//      /scan and /badge/<address>. Bar gates on both timer AND scan ready, so
-//      it can't lie about completion.
+//   1. Idle:    ConnectButton.
+//   2. Signing: crimson "Sign In" button prompts a sign-message ("I'm here").
+//   3. Loading: lavender-glow progress bar fills 0→100% over ~10s. Meanwhile,
+//      /api/scan/<address> fires speculatively and we prefetch /scan and
+//      /badge/<address>. The bar gates on both the cosmetic timer AND scan
+//      readiness so it can't lie about completion.
 //   4. When full → router.push('/scan').
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAccount, useDisconnect, useSignMessage } from 'wagmi';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
@@ -73,7 +73,7 @@ export function ConnectScan() {
     if (phase === 'idle' && address) setPhase('signing');
   }, [isConnected, address, phase]);
 
-  // Drive the green-button fill animation during 'loading'.
+  // Drive the lavender-bar fill animation during 'loading'.
   useEffect(() => {
     if (phase !== 'loading' || signedAt === null) return;
     const start = signedAt;
@@ -118,9 +118,9 @@ export function ConnectScan() {
 
   if (!isConnected) {
     return (
-      <div className="rounded-2xl border border-zinc-200 p-6 dark:border-zinc-800">
-        <p className="text-sm text-zinc-600 dark:text-zinc-400">
-          Connect your wallet to see your engagement badge.
+      <div className="rounded-2xl border border-armor-edge bg-armor/60 p-6 backdrop-blur-sm">
+        <p className="text-sm text-bone-muted">
+          Connect your wallet to consecrate your engagement badge.
         </p>
         <div className="mt-4">
           <ConnectButton
@@ -134,14 +134,14 @@ export function ConnectScan() {
   }
 
   return (
-    <div className="rounded-2xl border border-zinc-200 p-6 dark:border-zinc-800">
+    <div className="rounded-2xl border border-armor-edge bg-armor/60 p-6 backdrop-blur-sm">
       <div className="flex items-baseline justify-between">
-        <span className="font-mono text-xs text-zinc-500">
+        <span className="font-mono text-xs text-bone-muted">
           {address!.slice(0, 6)}…{address!.slice(-4)}
         </span>
         <button
           onClick={handleReset}
-          className="text-xs text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50"
+          className="font-display text-[10px] uppercase tracking-[0.25em] text-bone-muted transition-colors hover:text-crimson-glow"
         >
           disconnect
         </button>
@@ -149,37 +149,34 @@ export function ConnectScan() {
 
       {phase === 'signing' && (
         <div className="mt-6">
-          <h2 className="text-lg font-medium">Sign to enter</h2>
-          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+          <h2 className="font-display text-xl uppercase tracking-[0.15em] text-bone">
+            Sign to enter
+          </h2>
+          <p className="mt-2 text-sm text-bone-muted">
             One free off-chain signature — no gas, no transaction.
           </p>
           <button
             onClick={handleSign}
             disabled={signing}
-            className="mt-5 w-full rounded-xl bg-emerald-500 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:bg-emerald-600 disabled:opacity-50"
+            className="mt-6 w-full rounded-xl border border-crimson bg-gradient-to-b from-crimson to-crimson-deep px-6 py-4 font-display text-base font-semibold uppercase tracking-[0.25em] text-bone transition glow-crimson hover:from-crimson-glow hover:to-crimson disabled:opacity-50"
           >
             {signing ? 'Waiting for wallet…' : 'Sign In'}
           </button>
           {signError && (
-            <p className="mt-2 text-sm text-red-600">{signError}</p>
+            <p className="mt-3 text-sm text-crimson-glow">{signError}</p>
           )}
         </div>
       )}
 
       {phase === 'loading' && (
         <div className="mt-6">
-          <h2 className="text-lg font-medium">Reading the chain</h2>
-          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+          <h2 className="font-display text-xl uppercase tracking-[0.15em] text-bone">
+            Reading the chain
+          </h2>
+          <p className="mt-2 text-sm text-bone-muted">
             Mapping your address across Ritual Chain.
           </p>
-          <GreenLoadingButton
-            progress={progress}
-            label={
-              scanQuery.data
-                ? `${scanQuery.data.dapps.length} dApps · ${scanQuery.data.totalEngagements} tx`
-                : 'Scanning…'
-            }
-          />
+          <RitualLoadingBar progress={progress} label="Loading…" />
         </div>
       )}
     </div>
@@ -187,10 +184,11 @@ export function ConnectScan() {
 }
 
 /**
- * A button-shaped progress indicator: a green fill that slides left→right
- * across a pill, with the live label centered on top.
+ * Button-shaped lavender-glow progress bar. A bright purple/white fill slides
+ * left→right across a dark armor pill, evoking the glowing cross sword from
+ * the reference image.
  */
-export function GreenLoadingButton({
+export function RitualLoadingBar({
   progress,
   label,
 }: {
@@ -198,16 +196,18 @@ export function GreenLoadingButton({
   label: string;
 }) {
   return (
-    <div className="relative mt-5 h-14 w-full overflow-hidden rounded-xl bg-emerald-100 shadow-inner dark:bg-emerald-950/40">
+    <div className="relative mt-6 h-14 w-full overflow-hidden rounded-xl border border-armor-edge bg-armor shadow-inner">
       <div
-        className="absolute inset-y-0 left-0 bg-emerald-500 transition-[width] duration-100 ease-linear"
-        style={{ width: `${progress}%` }}
+        className="absolute inset-y-0 left-0 bg-gradient-to-r from-lavender via-bone to-lavender transition-[width] duration-100 ease-linear"
+        style={{
+          width: `${progress}%`,
+          boxShadow:
+            '0 0 24px 2px rgba(192, 132, 252, 0.55), 0 0 80px -10px rgba(233, 213, 255, 0.65)',
+        }}
       />
-      <div className="absolute inset-0 flex items-center justify-between px-5 text-sm font-semibold">
-        <span className="text-emerald-950 mix-blend-difference dark:text-emerald-50">
-          {label}
-        </span>
-        <span className="tabular-nums text-emerald-950 mix-blend-difference dark:text-emerald-50">
+      <div className="absolute inset-0 flex items-center justify-between px-5 font-display text-xs uppercase tracking-[0.3em]">
+        <span className="text-bone mix-blend-difference">{label}</span>
+        <span className="tabular-nums text-bone mix-blend-difference">
           {Math.floor(progress)}%
         </span>
       </div>

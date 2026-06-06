@@ -19,8 +19,8 @@ export async function GET(
     const result = await scanAddress(address);
     return NextResponse.json(result, {
       headers: {
-        // Tiny CDN cache to absorb badge-page bursts; the indexer churns on
-        // its own cadence anyway.
+        // Tiny CDN cache to absorb badge-page bursts. The scanner is ~70
+        // balanceOf RPC calls per uncached miss; cheap to memoize briefly.
         'cache-control': 'public, s-maxage=30, stale-while-revalidate=60',
       },
     });

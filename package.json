@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "registry:build": "node scripts/build-registry.cjs",
     "registry:seed": "tsx scripts/seed-registry.mts",
-    "backfill": "tsx scripts/backfill.mts"
+    "scan": "tsx scripts/assign-dapps.mts"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.11",

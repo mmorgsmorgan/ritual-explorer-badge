@@ -1,6 +1,9 @@
 // Tier + visual derivation for the badge page. Pure functions, no UI deps.
-
-import type { EngagedDapp } from './types';
+//
+// The five tiers map to escalating "ritual intensity" expressed through the
+// gothic palette: from cold sepia (Onlooker) through smoky crimson (Initiate /
+// Practitioner) to the lavender-cross-and-crimson-crown apex (Devotee /
+// Ritualist) that mirrors the reference image's hero.
 
 export type Tier = 'Onlooker' | 'Initiate' | 'Practitioner' | 'Devotee' | 'Ritualist';
 
@@ -12,121 +15,80 @@ export interface TierStyle {
   heroText: string;
   /** Tailwind ring color for the seal. */
   sealRing: string;
-  /** Tailwind background for the dApp chip in the tier color. */
-  chip: string;
 }
 
 export function tierFor(dappCount: number): TierStyle {
   if (dappCount >= 20) {
+    // Apex — full ritual: crimson crown over lavender cross.
     return {
       tier: 'Ritualist',
       heroGradient:
-        'from-amber-200 via-orange-300 to-amber-500 dark:from-amber-700 dark:via-orange-800 dark:to-amber-950',
-      heroText: 'text-amber-950 dark:text-amber-50',
-      sealRing: 'ring-amber-900/40 dark:ring-amber-100/40',
-      chip: 'bg-amber-100 text-amber-900 dark:bg-amber-900/30 dark:text-amber-200',
+        'from-crimson via-crimson-deep to-armor',
+      heroText: 'text-bone',
+      sealRing: 'ring-crimson-glow/70',
     };
   }
   if (dappCount >= 10) {
+    // Devotee — lavender ascendant.
     return {
       tier: 'Devotee',
       heroGradient:
-        'from-violet-300 via-fuchsia-400 to-violet-600 dark:from-violet-800 dark:via-fuchsia-900 dark:to-violet-950',
-      heroText: 'text-violet-950 dark:text-violet-50',
-      sealRing: 'ring-violet-900/40 dark:ring-violet-100/40',
-      chip: 'bg-violet-100 text-violet-900 dark:bg-violet-900/30 dark:text-violet-200',
+        'from-lavender/30 via-armor-soft to-crimson-deep/60',
+      heroText: 'text-bone',
+      sealRing: 'ring-lavender/60',
     };
   }
   if (dappCount >= 5) {
+    // Practitioner — armor with stronger crimson presence.
     return {
       tier: 'Practitioner',
       heroGradient:
-        'from-emerald-300 via-teal-400 to-emerald-600 dark:from-emerald-800 dark:via-teal-900 dark:to-emerald-950',
-      heroText: 'text-emerald-950 dark:text-emerald-50',
-      sealRing: 'ring-emerald-900/40 dark:ring-emerald-100/40',
-      chip: 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900/30 dark:text-emerald-200',
+        'from-crimson-deep/70 via-armor-soft to-armor',
+      heroText: 'text-bone',
+      sealRing: 'ring-crimson/50',
     };
   }
   if (dappCount >= 1) {
+    // Initiate — smoky crimson trace.
     return {
       tier: 'Initiate',
       heroGradient:
-        'from-sky-300 via-indigo-400 to-sky-600 dark:from-sky-800 dark:via-indigo-900 dark:to-sky-950',
-      heroText: 'text-sky-950 dark:text-sky-50',
-      sealRing: 'ring-sky-900/40 dark:ring-sky-100/40',
-      chip: 'bg-sky-100 text-sky-900 dark:bg-sky-900/30 dark:text-sky-200',
+        'from-crimson-deep/40 via-armor-soft to-armor',
+      heroText: 'text-bone',
+      sealRing: 'ring-crimson-deep/60',
     };
   }
+  // Onlooker — cold parchment haze.
   return {
     tier: 'Onlooker',
     heroGradient:
-      'from-zinc-200 via-zinc-300 to-zinc-400 dark:from-zinc-700 dark:via-zinc-800 dark:to-zinc-900',
-    heroText: 'text-zinc-900 dark:text-zinc-50',
-    sealRing: 'ring-zinc-900/40 dark:ring-zinc-100/40',
-    chip: 'bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300',
+      'from-sepia/40 via-armor-soft to-armor',
+    heroText: 'text-bone-muted',
+    sealRing: 'ring-sepia/60',
   };
 }
 
 /**
  * Deterministic dApp accent color. The same dApp gets the same hue across
- * page loads. Built from a hash of the dApp URL so it's stable.
+ * page loads — built from a hash of the dApp URL so it's stable. Eight gothic
+ * hues that all read against the armor surface.
  */
 export function dappAccent(url: string): { bg: string; text: string } {
   let h = 0;
   for (let i = 0; i < url.length; i++) h = (h * 31 + url.charCodeAt(i)) >>> 0;
-  // 12 hue-rotation buckets so cards visually distinguish but don't clash.
   const hues: Array<{ bg: string; text: string }> = [
-    { bg: 'bg-rose-500/15',    text: 'text-rose-700 dark:text-rose-300' },
-    { bg: 'bg-orange-500/15',  text: 'text-orange-700 dark:text-orange-300' },
-    { bg: 'bg-amber-500/15',   text: 'text-amber-700 dark:text-amber-300' },
-    { bg: 'bg-lime-500/15',    text: 'text-lime-700 dark:text-lime-300' },
-    { bg: 'bg-emerald-500/15', text: 'text-emerald-700 dark:text-emerald-300' },
-    { bg: 'bg-teal-500/15',    text: 'text-teal-700 dark:text-teal-300' },
-    { bg: 'bg-cyan-500/15',    text: 'text-cyan-700 dark:text-cyan-300' },
-    { bg: 'bg-sky-500/15',     text: 'text-sky-700 dark:text-sky-300' },
-    { bg: 'bg-indigo-500/15',  text: 'text-indigo-700 dark:text-indigo-300' },
-    { bg: 'bg-violet-500/15',  text: 'text-violet-700 dark:text-violet-300' },
-    { bg: 'bg-fuchsia-500/15', text: 'text-fuchsia-700 dark:text-fuchsia-300' },
-    { bg: 'bg-pink-500/15',    text: 'text-pink-700 dark:text-pink-300' },
+    { bg: 'bg-crimson/15',      text: 'text-crimson-glow' },
+    { bg: 'bg-crimson-deep/30', text: 'text-crimson-glow' },
+    { bg: 'bg-lavender/15',     text: 'text-lavender' },
+    { bg: 'bg-lavender-soft',   text: 'text-lavender' },
+    { bg: 'bg-sepia/30',        text: 'text-bone-muted' },
+    { bg: 'bg-armor-soft',      text: 'text-bone' },
+    { bg: 'bg-bone/10',         text: 'text-bone' },
+    { bg: 'bg-crimson-glow/15', text: 'text-crimson-glow' },
   ];
   return hues[h % hues.length];
 }
 
-/**
- * Earliest first-interaction across all engaged dApps — the "member since" date.
- */
-export function memberSince(dapps: EngagedDapp[]): string | null {
-  if (dapps.length === 0) return null;
-  let earliest = dapps[0].firstInteraction;
-  for (const d of dapps) {
-    if (d.firstInteraction < earliest) earliest = d.firstInteraction;
-  }
-  return earliest;
-}
-
 export function shortAddress(addr: string): string {
   return `${addr.slice(0, 6)}…${addr.slice(-4)}`;
-}
-
-export function fmtMonthYear(iso: string): string {
-  return new Date(iso).toLocaleDateString(undefined, {
-    year: 'numeric',
-    month: 'long',
-  });
-}
-
-export function fmtDate(iso: string): string {
-  return new Date(iso).toLocaleDateString(undefined, {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
-}
-
-/**
- * Days since timestamp (clamped to 0). Used for "X days ago" labels.
- */
-export function daysAgo(iso: string): number {
-  const diffMs = Date.now() - new Date(iso).getTime();
-  return Math.max(0, Math.floor(diffMs / 86_400_000));
 }

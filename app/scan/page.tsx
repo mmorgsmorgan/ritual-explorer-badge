@@ -2,19 +2,19 @@
 
 // Page 2 — /scan
 //
-// Big green SCAN button → user clicks → sign #2 → green progress bar fills →
-// navigate to /badge/<address>.
+// Big crimson SCAN button → user clicks → sign #2 → lavender progress bar
+// fills → navigate to /badge/<address>.
 //
 // The first sign-in on / already fired the speculative scan, so by the time
 // the user clicks SCAN here, the data is already cached in react-query.
 // Bar #2 gates on both the cosmetic timer AND scan readiness — but the scan
 // is almost always already done, so the bar just runs its cosmetic clock.
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAccount, useSignMessage } from 'wagmi';
 import { useQuery } from '@tanstack/react-query';
-import { GreenLoadingButton } from '../_components/ConnectScan';
+import { RitualLoadingBar } from '../_components/ConnectScan';
 import type { ScanResult } from '@/lib/types';
 
 type Phase = 'ready' | 'signing' | 'loading';
@@ -108,16 +108,16 @@ export default function ScanPage() {
 
   return (
     <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col items-center justify-center px-6 py-16">
-      <p className="text-xs uppercase tracking-widest text-zinc-500">
-        Step 2 · Sign to scan
+      <p className="font-display text-[10px] uppercase tracking-[0.5em] text-crimson-glow">
+        · Step 2 · Sign to scan ·
       </p>
-      <h1 className="mt-2 text-center text-4xl font-semibold tracking-tight">
+      <h1 className="mt-4 text-center font-display text-4xl font-bold uppercase tracking-[0.1em] text-bone">
         Ready to scan
       </h1>
-      <p className="mt-3 text-center text-zinc-600 dark:text-zinc-400">
+      <p className="mt-4 text-center text-sm text-bone-muted">
         Confirm a signature to pull your full engagement footprint.
       </p>
-      <p className="mt-4 font-mono text-xs text-zinc-500">
+      <p className="mt-5 font-mono text-xs text-bone-muted">
         {address.slice(0, 6)}…{address.slice(-4)}
       </p>
 
@@ -126,22 +126,18 @@ export default function ScanPage() {
           <button
             onClick={handleScan}
             disabled={signing}
-            className="w-full rounded-2xl bg-emerald-500 px-8 py-6 text-2xl font-bold uppercase tracking-wider text-white shadow-2xl shadow-emerald-500/40 transition hover:scale-[1.01] hover:bg-emerald-600 disabled:opacity-50"
+            className="w-full rounded-2xl border border-crimson bg-gradient-to-b from-crimson to-crimson-deep px-8 py-7 font-display text-3xl font-black uppercase tracking-[0.3em] text-bone transition glow-crimson hover:scale-[1.01] hover:from-crimson-glow hover:to-crimson disabled:opacity-50"
           >
-            {signing ? 'Waiting for wallet…' : 'Scan'}
+            {signing ? 'Waiting…' : 'Scan'}
           </button>
         ) : (
-          <GreenLoadingButton
+          <RitualLoadingBar
             progress={progress}
-            label={
-              scanQuery.data
-                ? `${scanQuery.data.dapps.length} dApps · ${scanQuery.data.totalEngagements} tx`
-                : 'Compiling…'
-            }
+            label={progress < 50 ? 'Scanning…' : 'Compiling…'}
           />
         )}
         {signError && (
-          <p className="mt-3 text-center text-sm text-red-600">{signError}</p>
+          <p className="mt-4 text-center text-sm text-crimson-glow">{signError}</p>
         )}
       </div>
     </main>
